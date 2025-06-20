@@ -1,0 +1,11 @@
+.chart{
+    background-color: white;
+    width: 55%;
+    height: 65vh;
+    justify-content: center;
+    display: flex;
+    border-radius: 30px;
+    text-align: center;
+    filter: drop-shadow(0 0 8px gray);
+    margin: 170px 95px;
+}

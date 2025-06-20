@@ -1,0 +1,17 @@
+.App{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8EDE3;
+}
+.AppGlass{
+    display: grid;
+    height: 97%;
+    width: 95%;
+    margin: auto;
+    border-radius: 1px;
+    background-color: var(--glass);
+    grid-template-columns: 14rem  auto;
+}
+
