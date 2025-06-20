@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
+h2{
+    color: #491503;
+    text-align: center;
+    padding: 40px;
+}
+
+/*start header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    z-index: 999;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color:transparent;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 10px;
+}    
+
+ul{
+    display: flex;
+}
+ul li{
+    margin-left:18px ;
+    list-style: none;
+    position: relative;
+    font-weight: bold;
+    color: #491503;
+}
+ul li::after{
+    content: "";
+    background-color: #491503;
+    top: 30px;
+    left: 0px;
+    width: 0;
+    height: 5px;
+    position: absolute;
+}
+ul li:hover::after{
+    transition: 0.5s;
+    width: 100%;
+}
+ul li:hover{
+    cursor: pointer;
+    color:#9c916e;
+}
+a:link{
+    text-decoration: none;
+}
+ul li a{
+    text-decoration: none;
+    
+}
+
+@media (max-width: 1024px){
+    header ul{
+        flex-direction: column;
+        background-color: rgba(245, 245, 245, 0.716);
+    }
+}
+/*end header*/
+/*start info*/
+#bg{
+    background-image: url(imgs/pet-boarding.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45vh;
+    width: 100%;
+    filter: blur(2px);
+    opacity: 0.9;
+}
+#category{
+    display: flex;
+    border: 2px solid #491503;
+    border-radius: 50px;
+    width: 35%;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+button{
+    background-color: transparent;
+}
+#gallery h1{
+    text-align: center;
+    color: #491503;
+}
+
+#buttons{
+    text-align: center;
+}
+#buttons button{
+    background-color: #491503;
+    color: white;
+}
+
+@media(max-width:1024px){
+    #category{
+     width: 66%;
+    } 
+ }
+/*end info*/
+
+/*start footer*/
+footer{
+    display: flex;
+    background-color: #FDF7F4;
+    color: #491503;
+    padding: 18px 120px;
+    justify-content: space-between;
+}
+.icons {
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 22px;
+}
+#cicons{
+    margin-top: 20px;
+}
+.icons a:hover{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+@media(max-width:1024px){
+   footer{
+    padding: 20px;
+   } 
+}
+/*end footer*/

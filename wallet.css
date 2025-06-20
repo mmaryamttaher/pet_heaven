@@ -1,0 +1,195 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(imgs/dog-cute-pet-web-banner-with-copy-space-generative-ai_653240-765.jpg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media(max-width:768px){
+  body{
+    background-size: cover;
+    height: 100vh;
+  }
+}
+.window{
+position: fixed;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgb(71, 70, 70);
+width: 650px;
+text-align: center;
+margin: 5px;
+position: absolute;
+backdrop-filter: blur(5px);
+display: flex;
+
+}
+@media (max-width: 768px) {
+.window {
+    width: 90%;
+    padding: 10px;
+}
+}
+.card-container {
+  text-align: left;
+  display: flex;
+}
+@media (max-width: 768px) {
+.card-container {
+    justify-content: center;
+}
+}
+.card {
+  width: 350px;
+  height: 200px;
+  background: linear-gradient(135deg, #854f2e, #613319);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+@media (max-width: 768px) {
+.card {
+    width: 100%;
+    height: auto;
+}
+}
+.card:hover {
+transform: scale(1.03);
+}
+.card .chip {
+  width: 50px;
+  height: 35px;
+  background-color: gold;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.card .visa-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Arial Black', sans-serif; 
+}
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .card .chip {
+    width: 40px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .card .visa-logo {
+    font-size: 16px;
+    top: 15px;
+    right: 20px;
+  }
+
+  form label {
+    font-size: 0.8rem;
+  }
+}
+input {
+  border: none;
+  outline: none; 
+  background: none; 
+  font-size: 1rem; 
+  color: white;
+  width: 100%; 
+}
+
+input::placeholder {
+  color: #a9a9a9;
+}
+
+input:focus {
+  outline: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  width: 48%;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;;
+}
+@media (max-width: 768px) {
+  .card .chip {
+    width: 40px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .card .visa-logo {
+    font-size: 16px;
+    top: 15px;
+    right: 15px;
+  }
+
+  form label {
+    font-size: 0.8rem;
+  }
+}
+
+.btn button {
+  float: right;
+  margin: 5px;
+  width: 25%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 0 9px rgb(96, 93, 93);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  color: #7d2f15;
+  
+}
+
+.btn button:hover {
+  background-color: #dac3af;
+}
+@media (max-width: 768px) {
+.btn button {
+  width: 70%;
+  height: 50px;
+  font-size: 14px;
+  float: none;
+  margin: 10px auto;
+  display: block;
+}
+}
+@media (max-width: 768px) {
+img {
+  width: 100%;
+  height: 100px;
+}
+}
