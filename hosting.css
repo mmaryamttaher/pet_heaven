@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
+section{
+    padding-top: 120px;
+    padding-bottom: 55px;
+}
+h2{
+    color: #491503;
+    text-align: center;
+    padding: 15px;
+}
+
+/*start header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    z-index: 999;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color:transparent;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 10px;
+}    
+
+ul{
+    display: flex;
+}
+ul li{
+    margin-left:18px ;
+    list-style: none;
+    position: relative;
+    font-weight: bold;
+    color: #491503;
+}
+ul li::after{
+    content: "";
+    background-color: #491503;
+    top: 30px;
+    left: 0px;
+    width: 0;
+    height: 5px;
+    position: absolute;
+}
+ul li:hover::after{
+    transition: 0.5s;
+    width: 100%;
+}
+ul li:hover{
+    cursor: pointer;
+    color:#9c916e;
+}
+a:link{
+    text-decoration: none;
+}
+ul li a{
+    text-decoration: none;
+    
+}
+
+@media (max-width: 1024px){
+    header ul{
+        flex-direction: column;
+    }
+}
+/*end header*/
+
+/*start main*/
+#hosting{
+    background-image: url(imgs/cute-small-dog-with-copy-space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#define{
+    margin-left: 550px;
+    justify-content: end;
+}
+#hosting h1,h2,h4{
+    text-align: center;
+    margin: 30px;
+}
+#hosting h1{
+    color: #491503;
+}
+#hosting button{
+    margin-left: 64%;
+    margin-top: 15px;
+    color: #491503;
+    font-weight: 600;
+    background-color: rgb(228, 221, 213);
+}
+
+@media (max-width: 1024px){
+    #define{
+        margin-left: 0;
+    }
+    #hosting button{
+        margin-left: 35%;
+    }
+}
+/*end main*/

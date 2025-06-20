@@ -1,0 +1,294 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
+section{
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+.f-icon{
+    position: fixed;
+    bottom: 90px;
+    right: 50px;
+    font-size: 2em;
+    line-height: 65px;
+}
+.f-icon ul{
+    font-size: 2em;
+}
+
+
+/*start header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    z-index: 999;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color:transparent;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 10px;
+}    
+
+ul{
+    display: flex;
+}
+ul li{
+    margin-left:18px ;
+    list-style: none;
+    position: relative;
+    font-weight: bold;
+    color: #491503;
+}
+ul li::after{
+    content: "";
+    background-color: #491503;
+    top: 30px;
+    left: 0px;
+    width: 0;
+    height: 5px;
+    position: absolute;
+}
+ul li:hover::after{
+    transition: 0.5s;
+    width: 100%;
+}
+ul li:hover{
+    cursor: pointer;
+    color:#9c916e;
+}
+a:link{
+    text-decoration: none;
+}
+ul li a{
+    text-decoration: none;
+    
+}
+
+@media (max-width: 1024px){
+    header ul{
+        flex-direction: column;
+        margin-left: 80px;
+    }
+}
+/*end header*/
+
+/*start home*/
+#home
+{
+    background-image: url(imgs/close-up-hand-holding-kennel.jpg);
+    height: 95vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#home{
+    padding: 260px 120px;
+    color: #491503;
+}
+#home button{
+    color: #491503;
+    background-color: white;
+    border-color: white;
+    font-weight: 500;
+    filter: drop-shadow(0 0 5px rgb(57, 16, 5));
+}
+@media (max-width: 1024px){
+    #home{
+        padding: 350px 30px;
+    }
+}
+/*end home*/
+
+/*start discount*/
+
+#discounts img{
+    margin-top: 30px ;
+    margin-left: 110px;
+    filter: drop-shadow(0 0 10px rgb(57, 16, 5));
+}
+#discounts h2{
+    color: #491503;
+    text-align: center;
+    padding: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 1024px){
+    #discounts img{
+        width: 280px;
+        margin: 9%;
+    }
+}
+/*end discount*/
+
+/*start services*/
+.services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+#services img{
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.577);
+    border-radius: 1000px;
+    filter: drop-shadow(0 0 10px rgb(57, 16, 5));
+}
+#services h4{
+    color: #491503;
+}
+#services h2{
+    color: #491503;
+    text-align: center;
+    padding: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#services h4:hover{
+    cursor: pointer;
+    color:#953f34;
+}
+@media (max-width: 1024px){
+    .services{
+        display: inline;
+        text-align: center;
+        line-height: 160px;
+    }
+}
+/*end services*/
+
+/*start hotel*/
+#cards{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin: 50px 0px;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    border: 1px solid white;
+    min-height: 10em;
+    width: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    margin: auto;
+    transition: 0.7s ease;
+    }
+.card:hover{
+    width: 52%;
+    transition: 0.5s;
+}
+.card:hover .card-img{
+    opacity: 0.9;
+}
+
+.card-img img{
+    width: 100%;
+}
+
+.details{
+    padding: 0.2em;   
+}
+#hotels h2{
+    color: #491503;
+    text-align: center;
+    padding: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.card button{
+    background-color: #491503;
+}
+.next{
+    display: flex;
+    justify-content: space-between;
+}
+/*end hotel*/
+
+/*start about*/
+.about{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+}
+.about p{
+    display: flex;
+    align-items: center;
+    color: #491503;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+#about h2{
+    color: #491503;
+    text-align: center;
+    padding: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 1024px){
+    .about{
+        display: inline;
+    }
+    .about img{
+        width: 200px;
+        height: 200px;
+        margin-left: 74px;
+        margin-bottom: 40px;
+    }
+    .about p{
+        margin: 15px;
+    }
+}
+/*end about*/
+
+
+/*start footer*/
+footer{
+    display: flex;
+    background-color: #FDF7F4;
+    color: #491503;
+    padding: 18px 120px;
+    justify-content: space-between;
+}
+.icons {
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 22px;
+}
+#cicons{
+    margin-top: 20px;
+}
+.icons a:hover{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+@media(max-width:1024px){
+   footer{
+    padding: 20px;
+   } 
+}
+/*end footer*/
